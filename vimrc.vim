@@ -1,40 +1,6 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set nocompatible        " Make vim not suck
-filetype off
-
-set backspace=2         " Allow for backspace
-set cursorline          " Highlight current line
-set encoding=utf8
-set showcmd             " Show commands
-set number              " Show line numbers
-set nowrap          
-set noeb vb 
-set t_vb= 
-set linespace=2         " Give the font some room
-
-set nobackup            " Turn off backup files
-set noswapfile          " Turn off swap files
-set nowritebackup       " Turn off automatic write backup
-
-set hlsearch            " Highlight search matches
-set incsearch           " Starts searching before 'enter' is pressed
-
-set autoindent          " Automatically indent new lines
-set expandtab           " Tabs are spaces
-set smartindent
-set smarttab            " Be 'smart' when using tabs
-set shiftwidth=4        " Set 1 tab = 4 spaces
-set tabstop=4
-
-set splitbelow          " Horizontal tabs open below
-set splitright          " Vertical tabs open on the right
-
-set foldmethod=syntax   " Folds are defined by syntax highlighting
-set list
-set listchars=tab:\ \ ,precedes:<,extends:> " shows characters '<' and '>' for lines starting before and/or ending after the viewport, respectively
-set fillchars+=vert:\       " Display nothing in vertical split
 
 " Create statusline
 set laststatus=2 " always show status bar
@@ -52,10 +18,9 @@ set statusline+=\ [%l-%c/%L]
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Preconf for Tlist. Requires reference to cTags
+" Find Vundle
 if has("win32") || has("win16")
     set rtp+=C:/Program\ Files\ (x86)/Vim/vimfiles/bundle/Vundle.vim
-    let Tlist_Ctags_Cmd="C:/Progra~1/ctags/ctags.exe"
 else
     set rtp+=~/.vim/bundle/Vundle.vim
 endif
@@ -103,7 +68,6 @@ Plugin 'scrooloose/syntastic'       " Syntax highlighter
 Plugin 'junegunn/goyo.vim'          " Distraction free
 Plugin 'jdonaldson/vaxe'            " Haxe support
 Plugin 'gregsexton/MatchTag'        " Highlight matching HTML tags
-" Plugin 'Valloric/YouCompleteMe'   " Intellisense
 
 " Options
 let g:ctrlp_custom_ignore = {
@@ -155,16 +119,8 @@ nnoremap <Leader>m :TlistToggle<CR>
 nnoremap <Leader>n :NERDTreeToggle<CR>
 " Open CtrlP
 nnoremap <Leader>o :CtrlP<CR>
-" Close buffer
-nnoremap <Leader>q :q<CR>
 " Open Goyo
 nnoremap <Leader>r :Goyo<CR>
-" Open horizontal split
-nnoremap <Leader>s :sp<Space><CR>
-" Open vertical split
-nnoremap <Leader>v :vsp<Space><CR>
-" Save buffer
-nnoremap <Leader>w :w<CR>
 " Open local VIMRC
 noremap <Leader><Home> :e $MYVIMRC<CR>
 " Open NERDTree for current directory in current buffer
