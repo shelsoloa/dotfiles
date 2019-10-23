@@ -60,6 +60,13 @@ nnoremap <Leader>c :let @/= ""<CR>
 " Toggle menubar
 nnoremap <Leader>g :if &go=~#'m'<Bar>set go-=m<Bar>else<Bar>set go+=m<Bar>endif<CR>
 
+"""
+""" Plugin Mapping
+"""
+
+" Toggle NERDTree
+nnoremap <Leader>n :NERDTreeToggle<CR>
+
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

@@ -115,8 +115,6 @@ nnoremap <Leader>c :let @/= ""<CR>
 nnoremap <Leader>g :if &go=~#'m'<Bar>set go-=m<Bar>else<Bar>set go+=m<Bar>endif<CR>
 " Toggle Taglist
 nnoremap <Leader>m :TlistToggle<CR>
-" Toggle NERDTree
-nnoremap <Leader>n :NERDTreeToggle<CR>
 " Open CtrlP
 nnoremap <Leader>o :CtrlP<CR>
 " Open Goyo

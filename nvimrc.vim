@@ -13,6 +13,9 @@ set showmatch
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+
 Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 
