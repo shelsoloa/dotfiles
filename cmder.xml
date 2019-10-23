@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
 	<key name="ConEmu">
-		<key name=".Vanilla" modified="2019-01-14 19:29:07" build="180626">
+		<key name=".Vanilla" modified="2019-10-23 11:47:52" build="180626">
 			<value name="Language" type="string" data="en"/>
 			<value name="StartType" type="hex" data="02"/>
 			<value name="CmdLine" type="string" data=""/>
@@ -134,12 +134,12 @@
 			<value name="AutoSaveSizePos" type="hex" data="01"/>
 			<value name="Cascaded" type="hex" data="01"/>
 			<value name="IntegralSize" type="hex" data="00"/>
-			<value name="WindowMode" type="dword" data="00000520"/>
-			<value name="ConWnd X" type="long" data="332"/>
-			<value name="ConWnd Y" type="long" data="102"/>
-			<value name="LastMonitor" type="string" data="0,0,1920,1080"/>
-			<value name="ConWnd Width" type="dword" data="00000078"/>
-			<value name="ConWnd Height" type="dword" data="00000029"/>
+			<value name="WindowMode" type="dword" data="0000051f"/>
+			<value name="ConWnd X" type="long" data="560"/>
+			<value name="ConWnd Y" type="long" data="135"/>
+			<value name="LastMonitor" type="string" data="0,0,1920,1042"/>
+			<value name="ConWnd Width" type="dword" data="00000065"/>
+			<value name="ConWnd Height" type="dword" data="00000020"/>
 			<value name="16bit Height" type="ulong" data="0"/>
 			<value name="QuakeStyle" type="hex" data="00"/>
 			<value name="Restore2ActiveMon" type="hex" data="00"/>
@@ -584,23 +584,23 @@
 			</key>
 			<key name="Tasks" modified="2019-01-14 18:59:43" build="180626">
 				<value name="Count" type="long" data="9"/>
-				<key name="Task1" modified="2019-01-14 18:59:43" build="180626">
+				<key name="Task1" modified="2019-10-23 11:47:52" build="180626">
 					<value name="Name" type="string" data="{cmd::Cmder as Admin}"/>
 					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
 					<value name="GuiArgs" type="string" data=' /icon "%CMDER_ROOT%\icons\cmder.ico"'/>
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
-					<value name="Cmd1" type="string" data='*cmd /k ""%ConEmuDir%\..\init.bat" "'/>
+					<value name="Cmd1" type="string" data='-new_console:d:C:\Users\Shel *cmd /k ""%ConEmuDir%\..\init.bat" "'/>
 				</key>
-				<key name="Task2" modified="2019-01-14 18:59:43" build="180626">
+				<key name="Task2" modified="2019-10-23 11:47:52" build="180626">
 					<value name="Name" type="string" data="{cmd::Cmder}"/>
 					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
 					<value name="GuiArgs" type="string" data=' /icon "%CMDER_ROOT%\icons\cmder.ico"'/>
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
-					<value name="Cmd1" type="string" data='cmd /k ""%ConEmuDir%\..\init.bat" "'/>
+					<value name="Cmd1" type="string" data='-new_console:d:C:\Users\Shel cmd /k ""%ConEmuDir%\..\init.bat" "'/>
 				</key>
 				<key name="Task3" modified="2019-01-14 18:59:43" build="180626">
 					<value name="Name" type="string" data="{PowerShell::PowerShell as Admin}"/>
