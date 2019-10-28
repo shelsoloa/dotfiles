@@ -73,7 +73,7 @@ nnoremap <Leader>n :NERDTreeToggle<CR>
 " Load specific configuartions for vim  and nvim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 if has("nvim")
-    source ~/dotfiles/nvimrc.vim
+    runtime nvimrc.vim
 else
-    source vimrc.vim
+    runtime vimrc.vim
 endif
