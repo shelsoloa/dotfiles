@@ -1,21 +1,4 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" General
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" Create statusline
-set laststatus=2 " always show status bar
-set statusline=
-set statusline+=%#todo#
-set statusline+=%f
-set statusline+=%#error#
-set statusline+=%m
-set statusline+=%#todo#
-set statusline+=%=
-set statusline+=%y
-set statusline+=\ [%l-%c/%L]
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Find Vundle
@@ -25,22 +8,22 @@ else
     set rtp+=~/.vim/bundle/Vundle.vim
 endif
 
-let g:tlist_python_settings = 'python;c:class;f:function'
 call vundle#begin()
 
 " Dependencies
 Plugin 'gmarik/vundle'  " Let vundle manage vundle, required
 
 " Extensions
+Plugin 'vim-airline/vim-airline'    " Airline for statusbar
 Plugin 'kien/ctrlp.vim'             " Open files
 Plugin 'scrooloose/nerdtree'        " File browser
 
 " Colorschemes
 Plugin 'ayu-theme/ayu-vim'
 Plugin 'sjl/badwolf'
-Plugin 'chriskempson/base16-vim'
+" Plugin 'chriskempson/base16-vim'  " Uncomment if using base16. There are
+    " too many themes and it clutters the whole damn thing.
 Plugin 'herrbischoff/cobalt2.vim'
-Plugin 'zenorocha/dracula-theme'  " TODO fix this ... It does not find plugin
 Plugin 'jordwalke/flatlandia'
 Plugin 'romainl/flattened'
 Plugin 'morhetz/gruvbox'
@@ -85,7 +68,7 @@ filetype plugin indent on
 syntax enable
 set background=dark
 
-" let g:gruvbox_contrast_dark = 'hard'
+let g:airline_theme = 'gruvbox'
 let ayucolor="dark"
 colorscheme gruvbox
 
@@ -106,18 +89,11 @@ endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let mapleader = "\<Space>"
 
-" Clear search highlighting
-nnoremap <Leader>c :let @/= ""<CR>
 " Toggle menubar
 nnoremap <Leader>g :if &go=~#'m'<Bar>set go-=m<Bar>else<Bar>set go+=m<Bar>endif<CR>
 " Open CtrlP
 nnoremap <Leader>o :CtrlP<CR>
-" Open local VIMRC
-noremap <Leader><Home> :e $MYVIMRC<CR>
-" Open NERDTree for current directory in current buffer
-nnoremap N :open .<CR>
 " Highlight matching tags (I think)
 map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name"). '> trans<'
 \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"

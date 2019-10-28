@@ -66,8 +66,8 @@ nnoremap <Leader>g :if &go=~#'m'<Bar>set go-=m<Bar>else<Bar>set go+=m<Bar>endif<
 
 " Toggle NERDTree
 nnoremap <Leader>n :NERDTreeToggle<CR>
-
-
+" Open current directory in current buffer with NERDTree
+nnoremap N :open .<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Load specific configuartions for vim  and nvim
