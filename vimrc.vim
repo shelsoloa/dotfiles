@@ -30,8 +30,10 @@ call vundle#begin()
 
 " Dependencies
 Plugin 'gmarik/vundle'  " Let vundle manage vundle, required
-Plugin 'xolox/vim-misc' " Required for vim-colorscheme-switcher
-Plugin 'peterhoeg/vim-qml'  " Support for qml syntax highlighting
+
+" Extensions
+Plugin 'kien/ctrlp.vim'             " Open files
+Plugin 'scrooloose/nerdtree'        " File browser
 
 " Colorschemes
 Plugin 'ayu-theme/ayu-vim'
@@ -56,17 +58,13 @@ Plugin 'whatyouhide/vim-gotham'
 Plugin 'jpo/vim-railscasts-theme'
 Plugin 'KabbAmine/yowish.vim'
 
-" Utility
-Plugin 'octol/vim-cpp-enhanced-highlight'   " Better higlighting for c++ files
+" Etc
+Plugin 'scrooloose/syntastic'       " Syntax highlighter
+Plugin 'octol/vim-cpp-enhanced-highlight'   " C++ syntax improvements
 Plugin 'kchmck/vim-coffee-script'   " CoffeeScript syntax
 Plugin 'fatih/vim-go'               " Go syntax
-Plugin 'kien/ctrlp.vim'             " Open files
-Plugin 'mattn/emmet-vim'            " Emmet
-Plugin 'scrooloose/nerdtree'        " Tree view
-Plugin 'vim-scripts/taglist.vim'    " Member view
-Plugin 'scrooloose/syntastic'       " Syntax highlighter
-Plugin 'junegunn/goyo.vim'          " Distraction free
-Plugin 'jdonaldson/vaxe'            " Haxe support
+Plugin 'peterhoeg/vim-qml'          " QML syntax
+Plugin 'jdonaldson/vaxe'            " Haxe syntax
 Plugin 'gregsexton/MatchTag'        " Highlight matching HTML tags
 
 " Options
@@ -86,16 +84,17 @@ filetype plugin indent on
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax enable
 set background=dark
+
+" let g:gruvbox_contrast_dark = 'hard'
+let ayucolor="dark"
+colorscheme gruvbox
+
 if has('gui_running')
     if has("win32") || has("win16")
-        set guifont=Source_Code_Pro:h11
+        set guifont=mononoki:h11
     else
         set guifont=mononoki\ 10
     endif
-
-    " let g:gruvbox_contrast_dark = 'hard'
-	let ayucolor="dark"
-    colorscheme ayu
 
     set guioptions-=m " no menu
     set guioptions-=T " no toolbar
@@ -113,12 +112,8 @@ let mapleader = "\<Space>"
 nnoremap <Leader>c :let @/= ""<CR>
 " Toggle menubar
 nnoremap <Leader>g :if &go=~#'m'<Bar>set go-=m<Bar>else<Bar>set go+=m<Bar>endif<CR>
-" Toggle Taglist
-nnoremap <Leader>m :TlistToggle<CR>
 " Open CtrlP
 nnoremap <Leader>o :CtrlP<CR>
-" Open Goyo
-nnoremap <Leader>r :Goyo<CR>
 " Open local VIMRC
 noremap <Leader><Home> :e $MYVIMRC<CR>
 " Open NERDTree for current directory in current buffer
