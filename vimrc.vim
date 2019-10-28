@@ -74,9 +74,9 @@ colorscheme gruvbox
 
 if has('gui_running')
     if has("win32") || has("win16")
-        set guifont=mononoki:h11
+        set guifont=Office_Code_Pro:h10
     else
-        set guifont=mononoki\ 10
+        set guifont=Office\ Code\ Pro\ 10
     endif
 
     set guioptions-=m " no menu
