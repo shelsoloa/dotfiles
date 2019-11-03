@@ -1,8 +1,17 @@
 # Soloa (.) Files
 
-This is a collection of all my dotfiles. Mainly for internal usage, but if you find anything cool in here, feel free to grab it.
+This is a collection of my dotfiles for both Windows & Linux (Debian 10)
 
-## Installing Vim
+## Linux Configuration
+
+Distro: Debian 10
+DE: XFCE
+Shell: ZSH
+Terminal: Alacritty
+Editor: Neovim
+
+
+## Configuring Vim & NeoVim
 
 In the default vimrc add the following lines:
 
@@ -21,3 +30,4 @@ if using neovim, install Plug
 Install plugins and restart vim
 
     vim +PluginInstall +qall && vim
+    nvim +PlugInstall +qall && nvim

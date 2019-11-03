@@ -1,34 +1,43 @@
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" General
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""
+" General "
+"""""""""""
 
 set showmatch
 
-:autocmd InsertEnter,InsertLeave * set cul! " Toggle cursor line highlighting depending on mode
+ " Toggle cursor line highlighting depending on mode
+autocmd InsertEnter,InsertLeave * set cul!
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Plugins
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""
+" Plugins "
+"""""""""""
 
 call plug#begin('~/.config/nvim/plugged')
 
+" Add NERDTree and it's helpers
 Plug 'scrooloose/nerdtree'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
-Plug 'morhetz/gruvbox'
+" Airline for status bar
 Plug 'vim-airline/vim-airline'
+
+" Colorschemes
+Plug 'morhetz/gruvbox'
 
 call plug#end()
 
-set background=dark
-colorscheme gruvbox
-let g:airline_theme = 'gruvbox'
-set termguicolors
+""""""""""
+" Colors "
+""""""""""
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Mappings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set background=dark
+set termguicolors
+let g:airline_theme = 'gruvbox'
+colorscheme gruvbox
+
+""""""""""""
+" Mappings "
+""""""""""""
 
 " Open file with :open 
 map :open :e
