@@ -8,6 +8,7 @@ antigen use oh-my-zsh
 
 antigen bundle colored-man-pages
 antigen bundle git
+antigen bundle pyenv
 antigen bundle lukechilds/zsh-nvm
 antigen bundle valentinocossar/sublime 
 
@@ -15,3 +16,5 @@ antigen bundle valentinocossar/sublime
 antigen theme denysdovhan/spaceship-prompt
 
 antigen apply
+
+eval "$(pyenv init -)"
