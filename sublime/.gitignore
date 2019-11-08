@@ -4,4 +4,5 @@
 # Except settings
 !.gitignore
 !*/
+!*.sublime-keymap
 !*.sublime-settings
