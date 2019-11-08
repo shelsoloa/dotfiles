@@ -1,0 +1,30 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"Agila Theme",
+		"AutoFileName",
+		"ayu",
+		"BracketHighlighter",
+		"Ciapre Color Scheme",
+		"Dracula Color Scheme",
+		"Emoji",
+		"FontCycler",
+		"GitGutter",
+		"gruvbox",
+		"MarkdownLivePreview",
+		"MarkdownPreview",
+		"Origami",
+		"Package Control",
+		"SideBarEnhancements",
+		"Skins",
+		"SublimeLinter",
+		"Theme - Brogrammer",
+		"Theme - Cobalt2",
+		"Theme - Tech49"
+	]
+}

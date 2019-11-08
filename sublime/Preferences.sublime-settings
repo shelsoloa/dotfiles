@@ -1,0 +1,43 @@
+{
+	"added_words":
+	[
+		"unaddressed",
+		"refamiliarize",
+		"Oakville",
+		"internet",
+		"smartphone",
+		"dystopian"
+	],
+	"always_show_minimap_viewport": true,
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/gruvbox/gruvbox (Dark) (Hard).sublime-color-scheme",
+	"font_face": "Space Mono",
+	"font_size": 9,
+	"fonts_list":
+	[
+		"Andale Mono",
+		"Anka/Coder",
+		"Consolas",
+		"Courier New",
+		"fantasque sans mono",
+		"Fira Mono",
+		"Fira Code",
+		"IBM Plex Mono",
+		"Inconsolata",
+		"Input Mono",
+		"mononoki",
+		"Office Code Pro",
+		"Roboto Mono",
+		"Space Mono",
+		"Source Code Pro"
+	],
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"line_padding_bottom": 3,
+	"line_padding_top": 3,
+	"overlay_scroll_bars": "enabled",
+	"skin": "ayu/ayu dark",
+	"theme": "Brogrammer.sublime-theme"
+}
