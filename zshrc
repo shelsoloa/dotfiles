@@ -1,20 +1,27 @@
 source /usr/share/zsh-antigen/antigen.zsh
 
-# Configurations
+# Start tmux
+# 1. Use command to check for the existence of tmux
+# 2. Use "$PS`" to check if we're in an interactive shell
+# 3. Make sure tmux does not run within tmux
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  exec tmux
+fi
+
+# Configure NVM
 export NVM_DIR="$HOME/.config/nvm"
 
-# Bundles
+# Install antigen bundles and themes
 antigen use oh-my-zsh
-
-antigen bundle colored-man-pages
-antigen bundle git
-antigen bundle pyenv
-antigen bundle lukechilds/zsh-nvm
-antigen bundle valentinocossar/sublime 
-
-# Themes
-antigen theme denysdovhan/spaceship-prompt
-
+    antigen bundle colored-man-pages
+    antigen bundle git
+    antigen bundle pyenv
+    antigen bundle lukechilds/zsh-nvm
+    antigen bundle srijanshetty/zsh-pip-completion
+    antigen bundle valentinocossar/sublime
+    antigen theme denysdovhan/spaceship-prompt
 antigen apply
 
+# Start pyenv
 eval "$(pyenv init -)"
+
