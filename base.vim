@@ -51,6 +51,8 @@ let mapleader = "\<Space>"
 nnoremap <Leader>w :w<CR>
 " Close buffer
 nnoremap <Leader>q :q<CR>
+" Save & Close buffer
+nnoremap <Leader>x :x<CR>
 " Open horizontal split
 nnoremap <Leader>s :sp<Space><CR>
 " Open vertical split
