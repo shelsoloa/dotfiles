@@ -25,3 +25,5 @@ antigen apply
 # Start pyenv
 eval "$(pyenv init -)"
 
+# Easy access to dotfiles
+export dotfiles="$HOME/Documents/dotfiles"
