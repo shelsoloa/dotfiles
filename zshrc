@@ -27,3 +27,5 @@ eval "$(pyenv init -)"
 
 # Easy access to dotfiles
 export dotfiles="$HOME/Documents/dotfiles"
+
+alias ll='ls -1F --group-directories-first'
