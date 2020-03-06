@@ -1,15 +1,16 @@
-# Soloa (.) Files
+# Soloa DotFiles
 
 This is a collection of my dotfiles for both Windows & Linux (Debian 10)
 
 ## Linux Configuration
 
-Distro: Debian 10
-DE: XFCE
-Shell: ZSH
-Terminal: Alacritty
-Editor: Neovim
-
+- Distro: Ubuntu
+- DE: XFCE
+- Shell: ZSH
+- Terminal: Alacritty
+- Editors: SublimeText, Neovim
+- Tools: Antigen, Pyenv
+    
 
 ## Configuring Vim & NeoVim
 

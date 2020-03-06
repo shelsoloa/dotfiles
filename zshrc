@@ -22,8 +22,12 @@ antigen use oh-my-zsh
     antigen theme denysdovhan/spaceship-prompt
 antigen apply
 
-# Start pyenv
+# Configure and init pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
 # Easy access to dotfiles
 export dotfiles="$HOME/Documents/dotfiles"
+
+alias ll='ls -1F --group-directories-first'
