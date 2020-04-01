@@ -18,6 +18,7 @@
 		"gruvbox",
 		"MarkdownLivePreview",
 		"MarkdownPreview",
+		"Neka Theme",
 		"Origami",
 		"Package Control",
 		"Sass",
@@ -25,8 +26,10 @@
 		"Skins",
 		"SublimeLinter",
 		"SublimeLinter-flake8",
+		"Summerfruit Color Scheme",
 		"Theme - Brogrammer",
 		"Theme - Cobalt2",
-		"Theme - Tech49"
+		"Theme - Tech49",
+		"WordCount"
 	]
 }
