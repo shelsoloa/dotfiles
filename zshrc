@@ -1,3 +1,8 @@
+# Configure Google Cloud SDK autocompletion
+CLOUD_SDK_HOME=/usr/share/google-cloud-sdk
+source "${CLOUD_SDK_HOME}/completion.zsh.inc"
+
+# Load antigen
 source /usr/share/zsh-antigen/antigen.zsh
 
 # Start tmux
