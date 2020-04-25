@@ -1,5 +1,5 @@
 # Configure Google Cloud SDK autocompletion
-CLOUD_SDK_HOME=/usr/share/google-cloud-sdk
+CLOUD_SDK_HOME=~/.local/share/google-cloud-sdk
 source "${CLOUD_SDK_HOME}/completion.zsh.inc"
 
 # Load antigen
@@ -15,6 +15,9 @@ source /usr/share/zsh-antigen/antigen.zsh
 
 # Configure NVM
 export NVM_DIR="$HOME/.config/nvm"
+
+# Spacheship prompt options
+SPACESHIP_DOCKER_SHOW=false
 
 # Install antigen bundles and themes
 antigen use oh-my-zsh
