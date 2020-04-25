@@ -21,6 +21,9 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 " Add CtrlP
 Plug 'ctrlpvim/ctrlp.vim'
 
+" Play nice with tmux
+Plug 'christoomey/vim-tmux-navigator'
+
 " Airline for status bar
 Plug 'vim-airline/vim-airline'
 
@@ -47,3 +50,10 @@ map :open :e
 
 " Open CtrlP
 nnoremap <Leader>o :CtrlP<CR>
+
+" Map TMUX
+nnoremap <silent> <M-Left> :TmuxNavigateLeft<cr>
+nnoremap <silent> <M-Down> :TmuxNavigateDown<cr>
+nnoremap <silent> <M-Up> :TmuxNavigateUp<cr>
+nnoremap <silent> <M-Right> :TmuxNavigateRight<cr>
+" nnoremap <silent> <M-C> :TmuxNavigatePrevious<cr>
