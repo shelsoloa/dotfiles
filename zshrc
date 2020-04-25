@@ -9,9 +9,9 @@ source /usr/share/zsh-antigen/antigen.zsh
 # 1. Use command to check for the existence of tmux
 # 2. Use "$PS`" to check if we're in an interactive shell
 # 3. Make sure tmux does not run within tmux
-if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-  exec tmux
-fi
+# if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+#   exec tmux
+# fi
 
 # Configure NVM
 export NVM_DIR="$HOME/.config/nvm"

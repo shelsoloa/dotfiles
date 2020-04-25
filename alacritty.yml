@@ -35,7 +35,7 @@ font:
         style: regular
 
 shell:
-    program: /usr/bin/zsh
+    program: /usr/bin/tmux
 
 window:
     padding:
