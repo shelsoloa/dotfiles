@@ -18,6 +18,9 @@ Plug 'scrooloose/nerdtree'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
+" Add CtrlP
+Plug 'ctrlpvim/ctrlp.vim'
+
 " Airline for status bar
 Plug 'vim-airline/vim-airline'
 
@@ -41,3 +44,6 @@ colorscheme gruvbox
 
 " Open file with :open 
 map :open :e
+
+" Open CtrlP
+nnoremap <Leader>o :CtrlP<CR>
