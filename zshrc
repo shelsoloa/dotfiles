@@ -26,6 +26,7 @@ antigen use oh-my-zsh
     antigen bundle pyenv
     antigen bundle lukechilds/zsh-nvm
     antigen bundle srijanshetty/zsh-pip-completion
+    antigen bundle supercrabtree/k
     antigen bundle valentinocossar/sublime
     antigen theme denysdovhan/spaceship-prompt
 antigen apply
