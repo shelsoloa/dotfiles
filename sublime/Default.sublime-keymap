@@ -1,4 +1,5 @@
 [
+	{ "keys": ["f1"], "command": "sublime_linter_panel_toggle"},
 	{ "keys": ["ctrl+\\"], "command": "toggle_side_bar" },
     { "keys": ["ctrl+shift+w"], "command": "destroy_pane", "args": {"direction": "self"} },
     { "keys": ["ctrl+shift+v"], "command": "create_pane", "args": {"direction": "right", "give_focus": true} },
