@@ -8,13 +8,13 @@
 		"smartphone",
 		"dystopian",
 		"Gabzebo",
-		"distributables"
+		"distributables",
+		"codebase"
 	],
 	"always_show_minimap_viewport": true,
-	"bold_folder_labels": true,
-	"color_scheme": "Packages/gruvbox/gruvbox (Dark) (Hard).sublime-color-scheme",
-	"font_face": "Space Mono",
-	"font_size": 9,
+	"color_scheme": "Packages/Base16 Color Schemes/Themes/base16-default-dark.tmTheme",
+	"font_face": "fantasque sans mono",
+	"font_size": 10,
 	"fonts_list":
 	[
 		"Andale Mono",
@@ -35,12 +35,20 @@
 	],
 	"ignored_packages":
 	[
-		"Vintage"
+	],
+	"ignored_words":
+	[
+		"gabzebo",
+		"gitlab",
+		"npm"
 	],
 	"line_padding_bottom": 3,
 	"line_padding_top": 3,
 	"overlay_scroll_bars": "enabled",
 	"preview_on_click": false,
-	"skin": "ayu/ayu dark",
-	"theme": "Brogrammer.sublime-theme"
+	"skin": "gruvbox/gruvbox (Light) (Medium)",
+	"theme": "Monokai Pro (Filter Spectrum).sublime-theme",
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": "auto",
+	"wrap_width": 0
 }
