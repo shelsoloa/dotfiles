@@ -39,4 +39,12 @@ eval "$(pyenv init -)"
 # Easy access to dotfiles
 export dotfiles="$HOME/Documents/dotfiles"
 
+# Create ll alias
 alias ll='ls -1F --group-directories-first'
+
+# Create git aliases
+alias gs='git status .'
+alias gret='cd `git rev-parse --show-toplevel`'
+
+# Add scripts folder to path
+export PATH="$HOME/Documents/scripts:$PATH"
