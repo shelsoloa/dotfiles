@@ -1,0 +1,8 @@
+// SublimeLinter Settings - User
+{
+	"linters" :{
+		"flake8": {
+			"executable": "/home/shel/.pyenv/shims/flake8"
+		}
+	}
+}
