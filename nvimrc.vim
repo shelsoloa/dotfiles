@@ -29,6 +29,7 @@ Plug 'vim-airline/vim-airline'
 
 " Colorschemes
 Plug 'morhetz/gruvbox'
+Plug 'Erichain/vim-monokai-pro'
 
 call plug#end()
 
@@ -38,14 +39,16 @@ call plug#end()
 
 set background=dark
 set termguicolors
-let g:airline_theme = 'gruvbox'
+let g:gruvbox_contrast_dark = 'hard'
 colorscheme gruvbox
+
+let g:airline_theme = 'gruvbox'
 
 """"""""""""
 " Mappings "
 """"""""""""
 
-" Open file with :open 
+" Open file with :open
 map :open :e
 
 " Open CtrlP

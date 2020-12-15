@@ -1,19 +1,19 @@
 {
 	"added_words":
 	[
-		"unaddressed",
-		"refamiliarize",
-		"Oakville",
-		"internet",
-		"smartphone",
-		"dystopian",
-		"Gabzebo",
+		"codebase",
 		"distributables",
-		"codebase"
+		"dystopian",
+		"gabzebo",
+		"Gabzebo",
+		"internet",
+		"refamiliarize",
+		"smartphone",
+		"unaddressed"
 	],
 	"always_show_minimap_viewport": true,
-	"color_scheme": "Packages/Base16 Color Schemes/Themes/base16-default-dark.tmTheme",
-	"font_face": "fantasque sans mono",
+	"color_scheme": "Packages/gruvbox/gruvbox (Dark) (Hard).sublime-color-scheme",
+	"font_face": "Roboto Mono",
 	"font_size": 10,
 	"fonts_list":
 	[
@@ -35,10 +35,10 @@
 	],
 	"ignored_packages":
 	[
+		"Vintage"
 	],
 	"ignored_words":
 	[
-		"gabzebo",
 		"gitlab",
 		"npm"
 	],
@@ -46,8 +46,8 @@
 	"line_padding_top": 3,
 	"overlay_scroll_bars": "enabled",
 	"preview_on_click": false,
-	"skin": "gruvbox/gruvbox (Light) (Medium)",
-	"theme": "Monokai Pro (Filter Spectrum).sublime-theme",
+	"skin": "gruvbox/gruvbox (Dark) (Hard)",
+	"theme": "gruvbox.sublime-theme",
 	"trim_trailing_white_space_on_save": true,
 	"word_wrap": "auto",
 	"wrap_width": 0
