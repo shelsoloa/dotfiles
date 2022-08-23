@@ -2,6 +2,11 @@
 CLOUD_SDK_HOME=~/.local/share/google-cloud-sdk
 source "${CLOUD_SDK_HOME}/completion.zsh.inc"
 
+# Configure and init pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
 # Load antigen
 source /usr/share/zsh-antigen/antigen.zsh
 
@@ -30,11 +35,6 @@ antigen use oh-my-zsh
     antigen bundle valentinocossar/sublime
     antigen theme denysdovhan/spaceship-prompt
 antigen apply
-
-# Configure and init pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
 
 # Easy access to dotfiles
 export dotfiles="$HOME/Documents/dotfiles"
