@@ -1,7 +1,3 @@
-# Configure Google Cloud SDK autocompletion
-CLOUD_SDK_HOME=~/.local/share/google-cloud-sdk
-source "${CLOUD_SDK_HOME}/completion.zsh.inc"
-
 # Configure and init pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
