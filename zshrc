@@ -3,8 +3,19 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
-# Load antigen
-source /usr/share/zsh-antigen/antigen.zsh
+# Configure os specific
+case `uname` in
+    Darwin)  # OSX
+        ANTIGEN_PATH=/opt/homebrew/share/antigen/antigen.zsh
+        ll_COMMAND='gls -1F --group-directories-first'
+    ;;
+    Linux)  # Linux
+        ANTIGEN_PATH=/usr/share/zsh-antigen/antigen.zsh
+        ll_COMMAND='ls -1F --group-directories-first'
+    ;;
+esac
+
+source $ANTIGEN_PATH
 
 # Start tmux
 # 1. Use command to check for the existence of tmux
@@ -36,7 +47,7 @@ antigen apply
 export dotfiles="$HOME/Documents/dotfiles"
 
 # Create ll alias
-alias ll='ls -1F --group-directories-first'
+alias ll=$ll_COMMAND
 
 # Create git aliases
 alias gs='git status .'
