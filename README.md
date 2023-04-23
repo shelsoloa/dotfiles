@@ -1,6 +1,6 @@
 # Soloa DotFiles
 
-This is a collection of my dotfiles for both Windows & Linux (Debian 10)
+This is a collection of my dotfiles for both Windows, Ubuntu, and OSX
 
 ## Linux Configuration
 
@@ -8,27 +8,52 @@ This is a collection of my dotfiles for both Windows & Linux (Debian 10)
 - DE: XFCE
 - Shell: ZSH
 - Terminal: Alacritty
-- Editors: SublimeText, Neovim
+- Editors: Neovim
 - Tools: Antigen, Pyenv
-    
 
-## Configuring Vim & NeoVim
+# ZSH
+
+## On Linux
+
+
+## On Mac
+Install antigen through brew
+```
+brew install antigen
+```
+
+install coreutils for aliases
+```
+brew install coreutils
+```
+
+
+# Vim & NeoVim
 
 In the default vimrc add the following lines:
 
-    rtp+=PATH_TO_THIS_DIRECTORY
-    runtime base.vim
+Add the following lines to your rc file. For Vim the file is located at `~/.vimrc` for nvim it is located at `~/.config/nvim/init.vim`.
 
-if using regular vim, install Vundle
+```
+set rtp+=PATH_TO_DOTFILES_DIRECTORY
+runtime base.vim
+```
 
-    git clone git://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+### Complete Vim install
+Install Vundle & install plugins
+```
+git clone git://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-if using neovim, install Plug
+vim +PluginInstall +qall && vim
+```
 
-    curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
-        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+### Complete NeoVim install:
 
-Install plugins and restart vim
+Install Plug & install plugins
 
-    vim +PluginInstall +qall && vim
-    nvim +PlugInstall +qall && nvim
+```
+curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+nvim +PlugInstall +qall && nvim
+```
