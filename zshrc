@@ -7,7 +7,7 @@ eval "$(pyenv init -)"
 case `uname` in
     Darwin)  # OSX
         ANTIGEN_PATH=/opt/homebrew/share/antigen/antigen.zsh
-        ll_COMMAND='gls -1F --group-directories-first'
+        ll_COMMAND='gls -1F --group-directories-first --color'
     ;;
     Linux)  # Linux
         ANTIGEN_PATH=/usr/share/zsh-antigen/antigen.zsh
@@ -55,3 +55,6 @@ alias gret='cd `git rev-parse --show-toplevel`'
 
 # Add scripts folder to path
 export PATH="$HOME/Documents/scripts:$PATH"
+
+# Created by `pipx` on 2023-12-29 13:33:46
+export PATH="$PATH:/Users/shel/.local/bin"
