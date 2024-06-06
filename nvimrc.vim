@@ -30,6 +30,7 @@ Plug 'vim-airline/vim-airline'
 " Colorschemes
 Plug 'morhetz/gruvbox'
 Plug 'Erichain/vim-monokai-pro'
+Plug 'talha-akram/noctis.nvim'
 
 call plug#end()
 
@@ -39,8 +40,9 @@ call plug#end()
 
 set background=dark
 set termguicolors
-let g:gruvbox_contrast_dark = 'hard'
-colorscheme gruvbox
+" let g:gruvbox_contrast_dark = 'hard'
+" colorscheme monokai_pro
+colorscheme noctis_sereno
 
 let g:airline_theme = 'gruvbox'
 
