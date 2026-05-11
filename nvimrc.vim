@@ -15,7 +15,6 @@ call plug#begin('~/.config/nvim/plugged')
 
 " Add NERDTree and it's helpers
 Plug 'scrooloose/nerdtree'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " Add CtrlP
@@ -40,9 +39,10 @@ call plug#end()
 
 set background=dark
 set termguicolors
-" let g:gruvbox_contrast_dark = 'hard'
+let g:gruvbox_contrast_dark = 'hard'
 " colorscheme monokai_pro
-colorscheme noctis_sereno
+" colorscheme gruvbox
+colorscheme noctis
 
 let g:airline_theme = 'gruvbox'
 
