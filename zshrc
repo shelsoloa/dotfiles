@@ -54,7 +54,6 @@ antigen use oh-my-zsh
     antigen bundle srijanshetty/zsh-pip-completion
     antigen bundle supercrabtree/k
     antigen bundle valentinocossar/sublime
-    antigen bundle zsh-users/zsh-autosuggestions
     antigen theme romkatv/powerlevel10k
 antigen apply
 
